@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "SampleTest.js",
   "scripts": {
-    "test": "node_modules\\.bin\\cypress run",
-    "runTest": "npm run test --"
+    "test": "node_modules\\.bin\\cypress run --config pageLoadTimeout=100000",
+    "runtests": "npm run test --"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.1.0"
+    "cypress": "^13.1.0",
+    "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
     "aggregate-error": "^3.1.0",
